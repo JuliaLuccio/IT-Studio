@@ -1,0 +1,77 @@
+@import "./components/reset";
+@import "./components/variables";
+@import "./components/mixin";
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.585;
+}
+
+*::selection {
+   color: $white-color;
+   background: $accent-color;
+}
+
+a {
+   text-decoration: none;
+}
+
+.container {
+   max-width: 1145px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.links {
+   color: $white-color;
+   font-weight: 500;
+   display: inline-block;
+   padding: 10px 15px;
+   background-color: $accent-color;
+   border-radius: 30px;
+   min-width: 200px;
+   text-align: center;
+}
+
+.section-title {
+   font-weight: 700;
+   font-size: 36px;
+   color: $black-color;
+
+   @media (max-width:768px) {
+      font-size: 23px;
+   }
+}
+
+.desc-text {
+   color: $gray-color;
+}
+
+.subtitle {
+   font-weight: 600;
+   font-size: 18px;
+   color: $black-color;
+}
+
+.details-link {
+   color: $accent-color;
+   font-weight: 500;
+   text-decoration: underline;
+}
+
+.decor-line {
+   margin: 0;
+   border: none;
+   height: 1px;
+   background-color: $light-gray;
+}
+
+@import "./components/blocks/header";
+@import "./components/blocks/first-screen";
+@import "./components/blocks/services";
+@import "./components/blocks/about-us";
+@import "./components/blocks/speciality";
+@import "./components/blocks/projects";
+@import "./components/blocks/footer";

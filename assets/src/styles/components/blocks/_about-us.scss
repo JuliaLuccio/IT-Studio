@@ -1,0 +1,59 @@
+.about-us {
+
+   background-color: $cover-color;
+   padding: 100px 0 70px;
+
+   &__upper {
+      @include flex ($space, $ai, $wr, 30px);
+      margin-bottom: 90px;
+
+      @media (max-width:1150px) {
+         justify-content: center;
+      }
+   }
+
+   &__upper-text {
+      max-width: 490px;
+   }
+
+   &__upper-text-title {
+      margin-bottom: 40px;
+   }
+
+   &__upper-text-desc {
+      margin-bottom: 30px;
+   }
+
+   // &__upper-text-details {
+   // }
+
+   &__img {
+      border-radius: 30px;
+      font-size: 0;
+   }
+
+   &__achievement-list {
+      @include flex (space-evenly, $ai, $wr, 30px);
+      margin-top: 70px;
+   }
+
+   &__achievement-list-item {
+      flex-basis: 15%;
+      text-align: center;
+   }
+
+   &__achievement-list-item-total {
+      @include flex(space-evenly, $cntr, nowrap, 20px);
+   }
+
+   // &__achievement-list-item-icon {
+   // }
+
+   &__achievement-list-item-amount {
+      font-size: 36px;
+      // justify-items: end;
+   }
+
+   // &__achievement-list-item-desc {
+   // }
+}

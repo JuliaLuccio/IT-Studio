@@ -1,0 +1,31 @@
+.first-screen {
+
+   background: url(./src/images/first-screen.png) no-repeat top center/cover;
+   display: flex;
+   min-height: 900px;
+
+   &__content {
+      max-width: 830px;
+      margin: auto;
+      color: $white-color;
+      text-align: center;
+   }
+
+   &__content-direction {
+      font-weight: 500;
+      margin-bottom: 20px;
+   }
+
+   &__content-title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 50px;
+
+      @media (max-width:768px) {
+         font-size: 35px;
+      }
+   }
+
+   // &__content-link {
+   // }
+}

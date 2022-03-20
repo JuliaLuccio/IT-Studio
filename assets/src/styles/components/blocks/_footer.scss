@@ -1,0 +1,11 @@
+.footer {
+
+   background-color: $cover-color;
+   text-align: center;
+
+   &__copy {
+      padding: 17px 0;
+      font-size: 13px;
+      color: $gray-color;
+   }
+}
